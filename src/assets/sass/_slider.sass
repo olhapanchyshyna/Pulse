@@ -1,0 +1,50 @@
+.slider
+    margin-top: 108px
+    .container
+        position: relative
+    &__template
+        max-width: 750px
+        margin: 0 auto       
+    &__prev, &__next
+        position: absolute
+        top: 200px
+    &__prev img, &__next img
+        max-width: 30px
+        height: 50px
+        cursor: pointer
+    &__prev 
+        left: 0
+    &__next
+        right: 0
+    &__item img
+        width: 100%
+
+@media screen and (max-width: 991px)
+    .slider
+        &__template
+            max-width: 500px
+            margin: 0 auto  
+        &__prev, &__next
+            top: 150px
+@media screen and (max-width: 575px)
+    .slider
+        &__template
+            max-width: 350px
+            margin: 0 auto  
+        &__prev, &__next
+            top: 100px
+        &__prev img, &__next img
+            max-width: 20px
+            height: 40px
+
+@media screen and (max-width: 420px)
+    .slider
+        &__template
+            max-width: 250px
+            margin: 0 auto  
+        &__prev, &__next
+            top: 50px
+    
+
+
+

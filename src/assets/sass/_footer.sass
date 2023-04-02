@@ -1,0 +1,53 @@
+.footer
+    margin-top: 50px
+    position: relative
+    iframe
+        width: 100%
+    &__content
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        background-color: $main-color
+        padding: 50px 53px 56px
+        color: #fff
+        max-width: 460px
+        width: 100%
+        margin: 0 auto
+        min-height: 270px
+        text-align: center
+        font-size: 20px
+    &__address
+        font-weight: 500
+        margin: 0
+        margin-bottom: 30px 
+    &__contact
+        font-weight: 700
+        text-decoration: none
+        color: #fff
+    &__icons
+        margin-top: 30px 
+    &__icon
+        margin-right: 27px
+        max-width: 52px
+        width: 100%
+        cursor: pointer
+        &:last-child
+            margin-right: 0
+
+@media screen and (max-width: 575px)
+    .footer
+        &__content
+            padding: 45px 40px 
+            color: #fff
+            max-width: 300px
+            width: 100%
+            margin: 0 auto
+            min-height: 250px
+            text-align: center
+            font-size: 18px
+            border-radius: 10px
+
+
+      
+        

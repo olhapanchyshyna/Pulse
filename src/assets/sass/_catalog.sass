@@ -1,0 +1,133 @@
+.catalog
+    margin-top: 107px
+    .back
+        display: none
+    &__title
+        font-weight: 400
+        text-transform: uppercase
+    &__tabs
+        margin: 46px auto
+        max-width: 643px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding: 0
+    &__tab
+        list-style: none
+        max-width: 220px
+        width: 100%
+        height: 52px
+        line-height: 15px
+        background: rgba(0, 0, 0, 0.0001)
+        border: 2px solid #D0D0D0
+        padding: 17px 0px
+        font-weight: 400
+        font-size: 18px
+        text-align: center
+        text-transform: uppercase
+        color: #6B6B6B
+        transform: skew(-25deg)
+        margin-right: 17px
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+            box-shadow: 3px 3px 20px $main-color
+            border: none
+        &:last-child
+            margin-right: 0px
+        div
+            transform: skew(25deg)
+        &_active
+            background: #C70101
+            color: #fff
+            border: none
+    &__content
+        margin-top: 40px
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-around
+    &__item
+        padding: 20px
+        height: 450px 
+        max-width: 300px
+        width: 100%
+        background: #FFFFFF
+        border: 2px solid #E8E8E8
+        margin-top: 20px 
+    &__header
+        display: flex
+        align-items: center
+        flex-direction: column
+    &__img
+        max-width: 140px
+    &__subtitle
+        font-weight: 700
+        font-size: 16px
+        margin-bottom: 0
+        margin-top: 15px
+    &__text
+        &_front
+            text-align: center
+            margin-top: 15px
+            font-weight: 300
+            font-size: 14px
+        &_back
+            position: relative
+            font-weight: 300
+            font-size: 14px
+            color: #555555
+            list-style: none
+            margin-bottom: 10px
+            &::before
+                content: ''
+                position: absolute
+                top: 6px
+                left: -16px
+                width: 6px
+                height: 6px
+                background-color: $main-color
+    &__link
+        font-weight: 500
+        font-size: 14px
+        text-align: center
+        color: $main-color
+        &_front
+            margin-top: 10px
+            color: $main-color
+        &_back
+            margin-top: 55px
+            color: $main-color
+    &__footer
+        display: flex
+        justify-content: space-between
+    &__price
+        &_old
+            font-weight: 300
+            font-size: 14px
+            text-decoration-line: line-through
+            color: #555555
+        &_new
+            font-weight: 700
+            font-size: 20px
+    &__btn
+        max-width: 135px
+        width: 100%
+        min-height: 45px
+   
+@media screen and (max-width: 575px)
+    .catalog
+        &__tab
+            font-size: 13px
+            margin-right: 7px
+
+@media screen and (max-width: 395px)
+    .catalog
+        &__tab:last-child
+                padding-top: 10px 
+
+@media screen and (max-width: 343px)
+    .catalog
+        &__tab:nth-child(odd)
+            padding-top: 10px 

@@ -1,0 +1,53 @@
+.header
+    display: flex
+    justify-content: space-between
+    &__title
+        text-align: center
+        color: #FFFFFF
+        font-weight: 500
+        &_ru
+            font-size: 12px
+        &_en
+            font-size: 18px
+            margin-top: 7px
+    &__contact
+        display: flex
+        flex-direction: column
+        align-items: end
+    &__number
+        font-weight: 700
+        font-size: 18px
+        color: #FFFFFF
+        text-decoration: none
+    &__btn
+        margin-top: 5px
+        padding: 6px 15px
+        max-width: 153px
+        width: 100%
+    &__logo 
+        max-width: 251px
+        padding: 0
+        img
+            width: 100%
+
+@media screen and (max-width: 768px)
+    .header
+        &__logo 
+            max-width: 150px
+            img
+                width: 100%
+        &__title
+            display: none
+        &__number
+            display: none
+        &__btn
+            margin-top: 0px
+            padding: 15px 15px
+            max-width: 155px
+            width: 100%
+
+
+
+
+        
+            
