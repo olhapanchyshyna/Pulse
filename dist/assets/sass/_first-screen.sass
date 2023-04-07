@@ -1,0 +1,77 @@
+.first-screen
+    padding: 21px 0 93px
+    background: url("../img/first-screen/bg.jpg") center (center / cover) no-repeat
+    min-height: 650px
+    &__content
+        display: flex
+        align-items: flex-end
+        flex-direction: column
+        margin-top: 91px
+        padding: 0
+    &__title
+        font-weight: 700
+        font-size: 42px
+        line-height: 42px
+        text-transform: uppercase
+        color: #FFFFFF
+    &__subtitle
+        font-weight: 500
+        font-size: 24px
+        line-height: 24px
+        text-transform: uppercase
+        color: #FFFFFF
+        margin-top: 17px
+    &__list
+        margin-top: 60px
+        display: flex
+        max-width: 430px
+        width: 100%
+        align-items: flex-end
+        justify-content: space-between
+    &__item
+        max-width: 136px
+    &__icon
+        display: flex
+        margin: 0 auto
+    &__text
+        font-weight: 500
+        font-size: 14px
+        line-height: 14px
+        color: #FFFFFF
+        text-align: center
+        margin-top: 20px
+    &__btn
+        margin-top: 68px
+        padding: 12px 28px
+        height: 50px
+    &__link
+        margin-top: 10px
+        font-weight: 500
+        font-size: 16px
+        line-height: 25px
+        color: #FFFFFF
+        a
+            text-transform: uppercase
+            color: #FFFFFF
+
+
+@media screen and (max-width: 991px)
+    .first-screen
+        &__content
+            align-items: center
+@media screen and (max-width: 575px)
+    .first-screen
+        &__title
+            font-size: 34px
+            text-align: center
+        &__subtitle
+            font-size: 18px
+            margin-top: 10px
+            text-align: center 
+        &__list
+            margin-top: 50px
+            max-width: 380px
+            width: 100%
+        &__btn
+            margin-top: 50px
+        

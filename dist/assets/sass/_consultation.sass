@@ -1,0 +1,36 @@
+.consultation
+    background: url("../img/consultation/bg2.jpg") center (center / cover) no-repeat
+    min-height: 680px
+    padding: 100px 0 108px
+    &__title
+        color: #FFFFFF
+        font-size: 36px
+        line-height: 50px
+        display: flex
+        align-items: flex-end
+        text-transform: uppercase
+    &__subtitle
+        margin-top: 8px
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+        max-width: 426px
+        width: 100% 
+        color: #FFFFFF
+    &__list
+        margin-top: 36px    
+
+@media screen and (max-width: 991px)
+    .consultation
+        .container
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__title
+            font-size: 30px
+            text-align: center
+            line-height: 40px
+        &__subtitle
+            text-align: center
+            line-height: 25px
+            margin-top: 25px

@@ -96,8 +96,8 @@ function copyHTML() {
 }
 
 function copyImg() {
-    return src('src/assets/img/**/*')
-    .pipe(dest('dist/assets/img'))
+    return src('src/assets/*/**/*')
+    .pipe(dest('dist/assets'))
     .pipe(browserSync.stream());
 }
     
@@ -110,7 +110,7 @@ function createServer() {
 
   watch('./src/assets/sass/*.sass', createStyle).on('change', browserSync.reload);
   watch('./src/*.html', copyHTML).on('change', browserSync.reload);
-  watch('./src/assets/img/**/*', copyImg).on('change', browserSync.reload);
+  watch('./src/assets/*/**/*', copyImg).on('change', browserSync.reload);
   watch('./src/js/**/*.js', buildJs).on('change', browserSync.reload);
 }
 
