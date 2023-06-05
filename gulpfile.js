@@ -5,6 +5,8 @@ const cleanCSS = require('gulp-clean-css'); // минификация (удал�
 const rename = require('gulp-rename'); 
 const browserSync = require('browser-sync').create();
 const webpack = require('webpack-stream');
+const imagemin = require('gulp-imagemin');
+const htmlmin = require('gulp-htmlmin');
 
 function createStyle() {
     // Импортируем все необходимые файлы из sass директории
@@ -92,11 +94,13 @@ function buildProdJs() {
 
 function copyHTML() {
     return src('src/*.html')
-      .pipe(dest('dist'));
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(dest('dist'));
 }
 
 function copyImg() {
     return src('src/assets/*/**/*')
+    .pipe(imagemin())
     .pipe(dest('dist/assets'))
     .pipe(browserSync.stream());
 }
