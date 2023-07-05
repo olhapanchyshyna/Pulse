@@ -9,9 +9,9 @@ function forms(state){
             thanksSubTitle = thanksModal.querySelector('.modal-window__subtitle');
 
     const message = {
-        loading: 'Загрузка...',
-        okay: 'Спасибо за вашу заявку!',
-        failure: 'Что-то пошло не так...',
+        loading: 'loading...',
+        okay: 'Thanks for your application!',
+        failure: 'Something went wrong...',
     };
 
 

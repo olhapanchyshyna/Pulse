@@ -150,9 +150,9 @@ function forms(state) {
     thanksTitle = thanksModal.querySelector('.modal-window__title'),
     thanksSubTitle = thanksModal.querySelector('.modal-window__subtitle');
   var message = {
-    loading: 'Загрузка...',
-    okay: 'Спасибо за вашу заявку!',
-    failure: 'Что-то пошло не так...'
+    loading: 'loading...',
+    okay: 'Thanks for your application!',
+    failure: 'Something went wrong...'
   };
   function serverPostData(_x, _x2) {
     return _serverPostData.apply(this, arguments);
