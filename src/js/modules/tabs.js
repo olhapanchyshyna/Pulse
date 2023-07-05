@@ -21,7 +21,7 @@ function tabs(btnSelector,tabSelector){
     function showTabs(){
         tabs.forEach(item => {
             if(item.classList.contains('fitness')){
-                item.style.display = 'block'
+                item.style.display = 'flex'
             }
         });
     }
@@ -36,19 +36,19 @@ function tabs(btnSelector,tabSelector){
             if(btn.classList.contains('fitness')){
                 tabs.forEach(item => {
                     if(item.classList.contains('fitness')){
-                        item.style.display = 'block'
+                        item.style.display = 'flex'
                     }
                 });
             }else if(btn.classList.contains('run')){
                 tabs.forEach(item => {
                     if(item.classList.contains('run')){
-                        item.style.display = 'block'
+                        item.style.display = 'flex'
                     }
                 });
             }else if(btn.classList.contains('triathlon')){
                 tabs.forEach(item => {
                     if(item.classList.contains('triathlon')){
-                        item.style.display = 'block'
+                        item.style.display = 'flex'
                     }
                 });
             }
